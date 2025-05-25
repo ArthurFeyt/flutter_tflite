@@ -468,6 +468,7 @@ public class TflitePlugin implements MethodCallHandler {
     }
 
     protected Void doInBackground(Void... backgroundArguments) {
+      System.out.println("=== Using ArthurFeyt's fork of TFLite plugin ===");
       runTflite();
       return null;
     }
@@ -661,7 +662,8 @@ public class TflitePlugin implements MethodCallHandler {
       this.outputClasses = new float[1][num];
       this.outputScores = new float[1][num];
       this.inputArray = new Object[]{imgData};
-      System.out.println("MOTHERFUCKER")
+
+      System.out.println("MOTHERFUCKER");
       outputMap.put(3, numDetections);
       outputMap.put(1, outputScores);
       outputMap.put(2, outputClasses);
@@ -671,7 +673,7 @@ public class TflitePlugin implements MethodCallHandler {
     }
 
     protected void runTflite() {
-      System.out.println("SOMETHING IS HAPPENING")
+      System.out.println("SOMETHING IS HAPPENING");
       tfLite.runForMultipleInputsOutputs(inputArray, outputMap);
     }
 
