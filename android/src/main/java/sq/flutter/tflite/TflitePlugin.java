@@ -664,10 +664,10 @@ public class TflitePlugin implements MethodCallHandler {
       this.inputArray = new Object[]{imgData};
 
       System.out.println("MOTHERFUCKER");
-      outputMap.put(3, numDetections);
+      outputMap.put(0, numDetections);
       outputMap.put(1, outputScores);
       outputMap.put(2, outputClasses);
-      outputMap.put(0, outputLocations);
+      outputMap.put(3, outputLocations);
 
       startTime = SystemClock.uptimeMillis();
     }
