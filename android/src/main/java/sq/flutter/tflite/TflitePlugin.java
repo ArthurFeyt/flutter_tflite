@@ -662,9 +662,9 @@ public class TflitePlugin implements MethodCallHandler {
       this.outputScores = new float[1][num];
       this.inputArray = new Object[]{imgData};
 
-      outputMap.put(1, numDetections);
+      outputMap.put(2, numDetections);
       outputMap.put(0, outputClasses);
-      outputMap.put(2, outputScores);
+      outputMap.put(1, outputScores);
       outputMap.put(3, outputLocations);
 
       startTime = SystemClock.uptimeMillis();
