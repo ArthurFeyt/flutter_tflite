@@ -51,8 +51,6 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Vector;
 
-System.out.println("=== Using ArthurFeyt's fork of TFLite plugin ===");
-
 public class TflitePlugin implements MethodCallHandler {
   private final Registrar mRegistrar;
   private Interpreter tfLite;
@@ -469,7 +467,6 @@ public class TflitePlugin implements MethodCallHandler {
     }
 
     protected Void doInBackground(Void... backgroundArguments) {
-      System.out.println("=== Using ArthurFeyt's fork of TFLite plugin ===");
       runTflite();
       return null;
     }
@@ -664,7 +661,6 @@ public class TflitePlugin implements MethodCallHandler {
       this.outputScores = new float[1][num];
       this.inputArray = new Object[]{imgData};
 
-      System.out.println("MOTHERFUCKER");
       outputMap.put(0, numDetections);
       outputMap.put(1, outputScores);
       outputMap.put(2, outputClasses);
@@ -674,7 +670,6 @@ public class TflitePlugin implements MethodCallHandler {
     }
 
     protected void runTflite() {
-      System.out.println("SOMETHING IS HAPPENING");
       tfLite.runForMultipleInputsOutputs(inputArray, outputMap);
     }
 
