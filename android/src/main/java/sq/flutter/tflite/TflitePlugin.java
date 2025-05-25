@@ -661,7 +661,7 @@ public class TflitePlugin implements MethodCallHandler {
       this.outputClasses = new float[1][num];
       this.outputScores = new float[1][num];
       this.inputArray = new Object[]{imgData};
-
+      print("MOTHERFUCKER")
       outputMap.put(3, numDetections);
       outputMap.put(1, outputScores);
       outputMap.put(2, outputClasses);
