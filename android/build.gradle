@@ -21,8 +21,6 @@ rootProject.allprojects {
 
 apply plugin: 'com.android.library'
 
-# PD DU CUL
-
 android {
     namespace 'sq.flutter.tflite'
     compileSdkVersion 28
