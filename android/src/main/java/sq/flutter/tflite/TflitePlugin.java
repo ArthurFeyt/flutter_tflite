@@ -671,6 +671,7 @@ public class TflitePlugin implements MethodCallHandler {
     }
 
     protected void runTflite() {
+      System.out.println("SOMETHING IS HAPPENING")
       tfLite.runForMultipleInputsOutputs(inputArray, outputMap);
     }
 
