@@ -51,6 +51,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Vector;
 
+System.out.println("=== Using ArthurFeyt's fork of TFLite plugin ===");
 
 public class TflitePlugin implements MethodCallHandler {
   private final Registrar mRegistrar;
